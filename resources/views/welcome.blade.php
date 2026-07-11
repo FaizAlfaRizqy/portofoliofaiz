@@ -17,9 +17,26 @@
             </style>
         @endif
     </head>
-    <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
-        <div>
-            <p>Faiz Portfolio</p>
-        </div>
+    <body>
+        <section id="hero">
+            <video autoplay muted loop>
+                <source src="{{ asset('assets/video/hero.mp4') }}" type="video/mp4">
+            </video>
+            <div class="hero-content">
+                <p>Faiz Portfolio</p>
+            </div>
+        </section>
+        <section id="about">
+            <p>About Me</p>
+        </section>
+        <section id="projects">
+            <p>Projects</p>
+        </section>
+        <section id="skills">
+            <p>Skills</p>
+        </section>
+        <section id="contact">
+            <p>Contact</p>
+        </section>
     </body>
 </html>
