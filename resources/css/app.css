@@ -8,9 +8,11 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-body{
-    background: red;
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #0f172a;
 }
+
 #hero {
     position: relative;
     height: 100vh;
@@ -36,18 +38,40 @@ body{
     flex-direction: column;
 }
 
-span {
+.deskripsi span {
     color: red;
-    font-size: 20px;
-    text-align: center;
+    font-weight: 500;
 }
 
 p{
     color: white;
+    font-weight: 1;
 }
 
 .nama{
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
+    font-weight: 800;
+}
+
+.welkam{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.deskripsi{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: rgba(55, 55, 55, 0.5);
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
 }

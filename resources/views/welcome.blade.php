@@ -7,6 +7,9 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         @fonts
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
         <!-- Styles / Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
@@ -23,10 +26,10 @@
                 <source src="{{ asset('assets/video/hero.mp4') }}" type="video/mp4">
             </video>
             <div class="hero-content">
-                <p class="welkam">Welcome to My Portfolio</p><br>
-                <h1 class="nama">Muhammad Umar Faiz Alfa Rizqy</h1><br>
-                <p class="deskripsi">Passionate about building <span>backend</span> and <span>Embedded System</span>.</p><br>
-                <a href="#projects" class="btn">Lihat Portofolio</a>
+                <p class="welkam">Welcome to my page</p>
+                <h1 class="nama">Muhammad Umar Faiz <br> Alfa Rizqy</h1>
+                <p class="deskripsi">Passionate about building <span>backend</span> and <br> <span>Embedded System</span>.</p>
+                <a href="#projects" class="btn">See my Portofolio</a>
             </div>
         </section>
         <section id="about">
