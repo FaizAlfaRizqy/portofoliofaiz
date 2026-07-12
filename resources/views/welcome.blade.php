@@ -23,7 +23,10 @@
                 <source src="{{ asset('assets/video/hero.mp4') }}" type="video/mp4">
             </video>
             <div class="hero-content">
-                <p>Faiz Portfolio</p>
+                <p class="welkam">Welcome to My Portfolio</p><br>
+                <h1 class="nama">Muhammad Umar Faiz Alfa Rizqy</h1><br>
+                <p class="deskripsi">Passionate about building <span>backend</span> and <span>Embedded System</span>.</p><br>
+                <a href="#projects" class="btn">Lihat Portofolio</a>
             </div>
         </section>
         <section id="about">
