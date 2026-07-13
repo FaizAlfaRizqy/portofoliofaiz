@@ -44,7 +44,12 @@
                 </div>
             </section>
             <section id="about">
-                <p>About Me</p>
+                <div class="isi-about">
+                    <h1 class="judul-section">About <span>Me</span></h1>
+                    <p>I'm an Informatics student and backend developer who enjoys building reliable systems and exploring how things work behind the scenes. My interests span from web development with Laravel to embedded systems using Raspberry Pi and ArduPilot. I believe the best way to learn is by building, experimenting, and understanding the technology I use.</p>
+                    <img src="{{ asset('assets/gambar/ttd.png') }}" alt="tandatangan" id="ttd">
+                </div>
+                <img src="{{ asset('assets/gambar/Group 53.png') }}" alt="Foto" id="Foto-saya">
             </section>
             <section id="projects">
                 <p>Projects</p>

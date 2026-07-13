@@ -10,7 +10,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #0f172a;
+    background-color: #141414;
 }
 
 nav {
@@ -102,3 +102,43 @@ p{
     border-radius: 10px;
     font-weight: 600;
 }
+
+#about{
+    display: flex;
+    flex-direction: row;
+}
+
+.isi-about{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin-left: 40vh;
+    margin-top: 20vh;
+    gap : 30px;
+}
+
+#Foto-saya {
+    width: 240px;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    z-index: 1;
+    margin-left: 10vw;
+}
+
+.judul-section{
+    font-size:4.5em;
+    font-weight: 800;
+    color: white;
+}
+
+.judul-section span{
+    color: red;
+}
+
+#ttd{
+    width: 200px;
+    height: auto;
+}
+
+/*35 menit*/
