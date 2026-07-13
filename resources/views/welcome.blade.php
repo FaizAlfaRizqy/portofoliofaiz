@@ -21,28 +21,39 @@
         @endif
     </head>
     <body>
-        <section id="hero">
-            <video autoplay muted loop>
-                <source src="{{ asset('assets/video/hero.mp4') }}" type="video/mp4">
-            </video>
-            <div class="hero-content">
-                <p class="welkam">Welcome to my page</p>
-                <h1 class="nama">Muhammad Umar Faiz <br> Alfa Rizqy</h1>
-                <p class="deskripsi">Passionate about building <span>backend</span> and <br> <span>Embedded System</span>.</p>
-                <a href="#projects" class="btn">See my Portofolio</a>
-            </div>
-        </section>
-        <section id="about">
-            <p>About Me</p>
-        </section>
-        <section id="projects">
-            <p>Projects</p>
-        </section>
-        <section id="skills">
-            <p>Skills</p>
-        </section>
-        <section id="contact">
-            <p>Contact</p>
-        </section>
-    </body>
+        <header>
+            <nav>
+                <ul id="navbar">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="hero">
+                <video autoplay muted loop>
+                    <source src="{{ asset('assets/video/hero.mp4') }}" type="video/mp4">
+                </video>
+                <div class="hero-content">
+                    <p class="welkam">Welcome to my page</p>
+                    <h1 class="nama">Muhammad Umar Faiz <br> Alfa Rizqy</h1>
+                    <p class="deskripsi">Passionate about building <span>backend</span> and <br> <span>Embedded System</span>.</p>
+                    <a href="#projects" class="btn">See my Portofolio</a>
+                </div>
+            </section>
+            <section id="about">
+                <p>About Me</p>
+            </section>
+            <section id="projects">
+                <p>Projects</p>
+            </section>
+            <section id="skills">
+                <p>Skills</p>
+            </section>
+            <section id="contact">
+                <p>Contact</p>
+            </section>
+        </main>
 </html>
