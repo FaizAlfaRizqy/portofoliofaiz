@@ -140,5 +140,37 @@ p{
     width: 200px;
     height: auto;
 }
+#sneasel{
+    position:sticky;
+    display: flex;
+    z-index: 3;
+    top: 75vh;
+    left: 2vw;
+    width: 150px;
+    height: auto;
+}
 
+#timer{
+    position: fixed;
+    z-index: 3;
+    top: 80vh;
+    left: 80vw;
+    flex-direction: column;
+}
+
+.timer-label {
+    position: fixed;
+    display: flex;
+    top: 78vh;
+    left: 80vw;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+#timer-value {
+    color: white;
+    font-size: 4.5em;
+    font-weight: 800;
+}
 /*35 menit*/
