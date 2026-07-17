@@ -32,10 +32,12 @@
             </nav>
         </header>
         <!-- UI tambahan --->
-        <img src ="{{ asset('assets/gambar/Sneasel.gif') }}" alt="Sneasel" id="sneasel">
-        <div id="timer">
-            <div class="timer-label">Uptime:</div>
-            <div id="timer-value">00:00</div>
+        <div id="hiasan">
+            <img src ="{{ asset('assets/gambar/Sneasel.gif') }}" alt="Sneasel" id="sneasel">
+            <div id="timer">
+                <div class="timer-label">Session:</div>
+                <div id="timer-value">00:00</div>
+            </div>
         </div>
         <main>
             <section id="hero">

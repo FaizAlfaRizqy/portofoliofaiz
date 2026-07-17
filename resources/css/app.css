@@ -103,6 +103,15 @@ p{
     font-weight: 600;
 }
 
+#hiasan {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+#hiasan.is-visible {
+    opacity: 1;
+}
+
 #about{
     display: flex;
     flex-direction: row;
