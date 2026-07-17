@@ -33,7 +33,7 @@ nav {
     flex-direction: row;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:active {
     color: red;
     text-decoration: underline;
     text-underline-offset: 15px;
@@ -141,7 +141,7 @@ p{
     height: auto;
 }
 #sneasel{
-    position:sticky;
+    position:fixed;
     display: flex;
     z-index: 3;
     top: 75vh;
