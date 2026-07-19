@@ -24,6 +24,7 @@
         <header>
             <nav>
                 <ul id="navbar">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -42,7 +43,8 @@
         <main>
             <section id="hero">
                 <video autoplay muted loop>
-                    <source src="{{ asset('assets/video/hero.mp4') }}" type="video/mp4">
+                    <!-- <source src="{{ asset('assets/video/hero.mp4') }}" type="video/mp4"> -->
+                    <source src="{{ asset('assets/video/blackhole.mp4') }}" type="video/mp4">
                 </video>
                 <div class="hero-content">
                     <p class="welkam">Welcome to my page</p>
@@ -59,11 +61,11 @@
                 </div>
                 <img src="{{ asset('assets/gambar/Group 53.png') }}" alt="Foto" id="Foto-saya">
             </section>
+            <section id="skills">
+                <h1 class="judul-section"><span>Tech</span> Stack</h1>
+            </section>
             <section id="projects">
                 <p>Projects</p>
-            </section>
-            <section id="skills">
-                <p>Skills</p>
             </section>
             <section id="contact">
                 <p>Contact</p>

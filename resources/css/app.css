@@ -29,7 +29,7 @@ nav {
 
 #navbar {
     display: flex;
-    gap:50px;
+    gap:40px;
     flex-direction: row;
 }
 
@@ -153,10 +153,11 @@ p{
     position:fixed;
     display: flex;
     z-index: 3;
-    top: 75vh;
+    top: 80vh;
     left: 2vw;
-    width: 150px;
+    width: 120px;
     height: auto;
+    transform: scaleX(-1);
 }
 
 #timer{
