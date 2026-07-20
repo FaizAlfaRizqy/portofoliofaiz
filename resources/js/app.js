@@ -1,44 +1,50 @@
-
-//buat timer
 let elapsedSeconds = 0;
 let minutes = 0;
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("timer-value").textContent =
-        (minutes < 10 ? "0" : "") + minutes + ":" + (elapsedSeconds < 10 ? "0" : "") + elapsedSeconds;
+document.addEventListener('DOMContentLoaded', function () {
+    const timerValue = document.getElementById('timer-value');
 
-    const hiasan = document.getElementById("hiasan");
-    const heroSection = document.getElementById("hero");
-    const aboutSection = document.getElementById("about");
+    if (timerValue) {
+        timerValue.textContent = (minutes < 10 ? '0' : '') + minutes + ':' + (elapsedSeconds < 10 ? '0' : '') + elapsedSeconds;
 
-    const updateHiasanVisibility = function() {
+        function updateTimer() {
+            elapsedSeconds++;
+
+            if (elapsedSeconds >= 60) {
+                elapsedSeconds = 0;
+                minutes++;
+            }
+
+            timerValue.textContent = (minutes < 10 ? '0' : '') + minutes + ':' + (elapsedSeconds < 10 ? '0' : '') + elapsedSeconds;
+        }
+
+        setInterval(updateTimer, 1000);
+    }
+
+    const hiasan = document.getElementById('hiasan');
+    const heroSection = document.getElementById('hero');
+    const aboutSection = document.getElementById('about');
+
+    if (!hiasan || !heroSection || !aboutSection) {
+        return;
+    }
+
+    const updateHiasanVisibility = function () {
         const viewportMiddle = window.innerHeight / 2;
-        const isAboutActive =
-            aboutSection.getBoundingClientRect().top <= viewportMiddle &&
-            aboutSection.getBoundingClientRect().bottom >= viewportMiddle;
-        const isHeroActive =
-            heroSection.getBoundingClientRect().top <= viewportMiddle &&
-            heroSection.getBoundingClientRect().bottom >= viewportMiddle;
+        const aboutRect = aboutSection.getBoundingClientRect();
+        const heroRect = heroSection.getBoundingClientRect();
+
+        const isAboutActive = aboutRect.top <= viewportMiddle && aboutRect.bottom >= viewportMiddle;
+        const isHeroActive = heroRect.top <= viewportMiddle && heroRect.bottom >= viewportMiddle;
 
         if (isAboutActive) {
-            hiasan.classList.add("is-visible");
+            hiasan.classList.add('is-visible');
         } else if (isHeroActive) {
-            hiasan.classList.remove("is-visible");
+            hiasan.classList.remove('is-visible');
         }
     };
 
     updateHiasanVisibility();
-    window.addEventListener("scroll", updateHiasanVisibility, { passive: true });
-    window.addEventListener("resize", updateHiasanVisibility);
+    window.addEventListener('scroll', updateHiasanVisibility, { passive: true });
+    window.addEventListener('resize', updateHiasanVisibility);
 });
-
-function updateTimer() {
-    elapsedSeconds++;
-    if (elapsedSeconds >= 60) {
-        elapsedSeconds = 0;
-        minutes++;
-    }
-    document.getElementById("timer-value").textContent = (minutes < 10 ? "0" : "") + minutes + ":" + (elapsedSeconds < 10 ? "0" : "") + elapsedSeconds;
-}
-
-setInterval(updateTimer, 1000);

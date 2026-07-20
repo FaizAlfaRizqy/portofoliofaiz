@@ -43,8 +43,7 @@
         <main>
             <section id="hero">
                 <video autoplay muted loop>
-                    <!-- <source src="{{ asset('assets/video/hero.mp4') }}" type="video/mp4"> -->
-                    <source src="{{ asset('assets/video/blackhole.mp4') }}" type="video/mp4">
+                    <source src="{{ asset('assets/video/hero.mp4') }}" type="video/mp4">
                 </video>
                 <div class="hero-content">
                     <p class="welkam">Welcome to my page</p>
