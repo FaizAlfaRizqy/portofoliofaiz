@@ -184,3 +184,84 @@ p{
     font-weight: 800;
 }
 /*35 menit*/
+
+#skills h1{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: red;
+}
+
+.logo-list {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+}  
+
+.logo {
+    padding: 20px;
+    background-color: rgba(55, 55, 55, 0.5);
+}
+
+#projects h1{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.project-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(55, 55, 55, 0.5);
+}
+
+.project-image-primary {
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 320px;
+    border-radius: 10px;
+    background-color: rgba(55, 55, 55, 0.5);
+    inset: 0;
+    z-index: 1;
+}
+
+.project-image{
+    width: 400px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgba(55, 55, 55, 0.5);
+    inset: 0;
+    z-index: 1;
+}
+
+.project-info {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.project-secondary{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -62,9 +62,41 @@
             </section>
             <section id="skills">
                 <h1 class="judul-section"><span>Tech</span> Stack</h1>
+                <div class="logo-container">
+                    <ul class="logo-list">
+                        <li><img src="{{ asset('assets/gambar/laravel.png') }}" alt="Laravel" class="logo"></li>
+                        <li><img src="{{ asset('assets/gambar/php.png') }}" alt="PHP" class="logo"></li>
+                        <li><img src="{{ asset('assets/gambar/mysql.png') }}" alt="MySQL" class="logo"></li>
+                        <li><img src="{{ asset('assets/gambar/javascript.png') }}" alt="JavaScript" class="logo"></li>
+                        <li><img src="{{ asset('assets/gambar/html.png') }}" alt="HTML" class="logo"></li>
+                        <li><img src="{{ asset('assets/gambar/css.png') }}" alt="CSS" class="logo"></li>
+                    </ul>
+                </div>
             </section>
             <section id="projects">
-                <p>Projects</p>
+                <h1 class="judul-section"><span>My</span>Projects</h1>
+                <div class="project-container">
+                    <div src="{{ asset('assets/gambar/Project1.png') }}" alt="Project 1" class="project-image-primary">
+                        <div class="project-info">
+                            <h2 class="project-title">Project 1</h2>
+                            <p class="project-description">Description of Project 1.</p>
+                        </div>
+                    </div>
+                    <div class="project-secondary">
+                        <div src="{{ asset('assets/gambar/Project2.png') }}" alt="Project 2" class="project-image">
+                            <div class="project-info">
+                                <h2 class="project-title">Project 2</h2>
+                                <p class="project-description">Description of Project 2.</p>
+                            </div>
+                        </div>
+                        <div src="{{ asset('assets/gambar/Project3.png') }}" alt="Project 3" class="project-image">
+                            <div class="project-info">
+                                <h2 class="project-title">Project 3</h2>
+                                <p class="project-description">Description of Project 3.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="contact">
                 <p>Contact</p>
