@@ -23,12 +23,14 @@
     <body>
         <header>
             <nav>
+                <p1 class="logo-nav">Faiz<snap>Alfa</snap>Rizqy</p1>
                 <ul id="navbar">
                     <li><a href="#hero" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="www.github.com/faizalfarizqy" class="button">Download CV</a></li>
                 </ul>
             </nav>
         </header>
@@ -46,16 +48,20 @@
                     <source src="{{ asset('assets/video/hero.mp4') }}" type="video/mp4">
                 </video>
                 <div class="hero-content">
-                    <p class="welkam">Welcome to my page</p>
-                    <h1 class="nama">Muhammad Umar Faiz <br> Alfa Rizqy</h1>
-                    <p class="deskripsi">Passionate about building <span>backend</span> and <br> <span>Embedded System</span>.</p>
+                    <p class="jepang">こんにちわ!</p>
+                    <h1 class="nama">Faiz Alfa Rizqy</h1>
+                    <h2 class="role">Fullstack Developer</h2>
+                    <p class="deskripsi">I love building software that solves real problems from modern web applications to embedded systems. Every project is a chance to experiment, learn something new, and better understand the technology behind it.</p>
                     <a href="#projects" class="btn">See my Portofolio</a>
                 </div>
             </section>
             <section id="about">
                 <div class="isi-about">
                     <h1 class="judul-section">About <span>Me</span></h1>
-                    <p>I'm an Informatics student and backend developer who enjoys building reliable systems and exploring how things work behind the scenes. My interests span from web development with Laravel to embedded systems using Raspberry Pi and ArduPilot. I believe the best way to learn is by building, experimenting, and understanding the technology I use.</p>
+                    <p>I'm an Informatics student and backend developer who enjoys building reliable systems 
+                        and exploring how things work behind the scenes. My interests span from web development 
+                        with Laravel to embedded systems using Raspberry Pi and ArduPilot. I believe the best way 
+                        to learn is by building, experimenting, and understanding the technology I use.</p>
                     <img src="{{ asset('assets/gambar/ttd.png') }}" alt="tandatangan" id="ttd">
                 </div>
                 <img src="{{ asset('assets/gambar/Group 53.png') }}" alt="Foto" id="Foto-saya">
