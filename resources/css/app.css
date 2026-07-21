@@ -45,7 +45,8 @@ nav {
     flex-direction: row;
 }
 
-.nav-link:hover, .nav-link:active {
+.nav-link:hover,
+.nav-link:active {
     color: red;
     text-decoration: underline;
     text-underline-offset: 20px;
@@ -87,11 +88,11 @@ nav {
     flex-direction: column;
 }
 
-p{
+p {
     color: white;
 }
 
-.nama{
+.nama {
     color: white;
     font-size: 60px;
     font-weight: 800;
@@ -99,24 +100,24 @@ p{
     margin-bottom: -10px;
 }
 
-.jepang{
+.jepang {
     color: red;
     font-size: 25px;
     font-weight: 800;
 }
 
-.deskripsi{
+.deskripsi {
     font-size: 15px;
     max-width: 600px;
 }
 
-.role{
+.role {
     color: red;
     font-size: 40px;
     font-weight: 800;
 }
 
-.btn-container{
+.btn-container {
     margin-top: 20px;
     display: flex;
     gap: 20px;
@@ -142,7 +143,7 @@ p{
     opacity: 1;
 }
 
-#about{
+#about {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -150,11 +151,12 @@ p{
     height: 100vh;
     overflow: hidden;
     scroll-snap-align: start;
+    gap: 0;
 }
 
-.jepang-background{
+.jepang-background {
     position: absolute;
-    margin-top:10px;
+    margin-top: 150px;
     left: -1%;
     font-size: 200px;
     font-weight: 800;
@@ -162,17 +164,21 @@ p{
     opacity: .08;
 }
 
-.isi-about{
+.isi-about {
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
+    height: 100%;
     justify-content: center;
     align-items: flex-start;
-    gap: 12px;
-    padding: 0 5vw;
+    gap: 10px;
+    padding: 0;
+    margin-left: 20vw;
+    position: relative;
+    z-index: 2;
+    max-width: 520px;
 }
 
-#deskripsi-about{
+#deskripsi-about {
     margin-top: -20px;
     color: white;
     font-size: 15px;
@@ -181,32 +187,37 @@ p{
 }
 
 #Foto-saya {
-    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50vw;
     height: 100%;
+    margin-right: 5vw;
     object-fit: cover;
     object-position: top center;
     display: block;
-    flex-shrink: 0;
     z-index: 1;
 }
 
-.judul-section{
-    font-size:3.5em;
+.judul-section {
+    font-size: 3.5em;
     font-weight: 800;
     color: white;
     margin-top: -20px;
 }
 
-.judul-section span{
+.judul-section span {
     color: red;
 }
 
-#ttd{
+#ttd {
+    margin-top: 30px;
     width: 200px;
     height: auto;
 }
-#sneasel{
-    position:fixed;
+
+#sneasel {
+    position: fixed;
     display: flex;
     z-index: 3;
     top: 80vh;
@@ -216,7 +227,7 @@ p{
     transform: scaleX(-1);
 }
 
-#timer{
+#timer {
     position: fixed;
     z-index: 3;
     top: 80vh;
@@ -239,9 +250,10 @@ p{
     font-size: 4.5em;
     font-weight: 800;
 }
+
 /*35 menit*/
 
-#skills h1{
+#skills h1 {
     margin-top: 80px;
     display: flex;
     align-items: center;
@@ -260,21 +272,21 @@ p{
     display: flex;
     gap: 40px;
     flex-direction: row;
-}  
+}
 
 .logo {
     padding: 20px;
     background-color: rgba(55, 55, 55, 0.5);
 }
 
-#projects h1{
+#projects h1 {
     margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project-container{
+.project-container {
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -300,7 +312,7 @@ p{
     z-index: 1;
 }
 
-.project-image{
+.project-image {
     width: 400px;
     height: 150px;
     border-radius: 10px;
@@ -316,7 +328,7 @@ p{
     z-index: 2;
 }
 
-.project-secondary{
+.project-secondary {
     display: flex;
     flex-direction: column;
     gap: 20px;
