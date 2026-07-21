@@ -51,18 +51,25 @@
                     <p class="jepang">こんにちわ!</p>
                     <h1 class="nama">Faiz Alfa Rizqy</h1>
                     <h2 class="role">Fullstack Developer</h2>
-                    <p class="deskripsi">I love building software that solves real problems from modern web applications to embedded systems. Every project is a chance to experiment, learn something new, and better understand the technology behind it.</p>
-                    <a href="#projects" class="btn">See my Portofolio</a>
+                    <p class="deskripsi">I love building software that solves real problems from modern web 
+                        applications to embedded systems. Every project is a chance to experiment, learn 
+                        something new, and better understand the technology behind it.</p>
+                    <div class="btn-container">
+                        <a href="#projects" class="btn">My Projects</a>
+                        <a href="https://github.com/FaizAlfaRizqy" class="btn">Github</a>
+                    </div>
                 </div>
             </section>
             <section id="about">
+                <p class="jepang-background">私について</p>
                 <div class="isi-about">
+                    <p class="jepang">私について</p>
                     <h1 class="judul-section">About <span>Me</span></h1>
-                    <p>I'm an Informatics student and backend developer who enjoys building reliable systems 
+                    <p id="deskripsi-about">I'm an Informatics student and backend developer who enjoys building reliable systems 
                         and exploring how things work behind the scenes. My interests span from web development 
                         with Laravel to embedded systems using Raspberry Pi and ArduPilot. I believe the best way 
                         to learn is by building, experimenting, and understanding the technology I use.</p>
-                    <img src="{{ asset('assets/gambar/ttd.png') }}" alt="tandatangan" id="ttd">
+                <img src="{{ asset('assets/gambar/ttd.png') }}" alt="tandatangan" id="ttd">
                 </div>
                 <img src="{{ asset('assets/gambar/Group 53.png') }}" alt="Foto" id="Foto-saya">
             </section>

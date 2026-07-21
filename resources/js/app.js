@@ -47,4 +47,28 @@ document.addEventListener('DOMContentLoaded', function () {
     updateHiasanVisibility();
     window.addEventListener('scroll', updateHiasanVisibility, { passive: true });
     window.addEventListener('resize', updateHiasanVisibility);
+
+    // Scroll snap logic: snap between hero and about, free scroll after about
+    const html = document.documentElement;
+    html.classList.add('snap-active');
+
+    let snapEnabled = true;
+
+    const updateSnapBehavior = function () {
+        const aboutBottom = aboutSection.getBoundingClientRect().bottom;
+        const aboutTop = aboutSection.getBoundingClientRect().top;
+        const threshold = window.innerHeight * 0.5;
+
+        if (snapEnabled && aboutBottom < threshold) {
+            // User scrolled past about — disable snap for free scroll
+            html.classList.remove('snap-active');
+            snapEnabled = false;
+        } else if (!snapEnabled && aboutTop >= -threshold && aboutTop < window.innerHeight) {
+            // User is scrolling back up near about — re-enable snap
+            html.classList.add('snap-active');
+            snapEnabled = true;
+        }
+    };
+
+    window.addEventListener('scroll', updateSnapBehavior, { passive: true });
 });
