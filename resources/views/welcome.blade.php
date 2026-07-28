@@ -74,10 +74,14 @@
                 <img src="{{ asset('assets/gambar/Group 53.png') }}" alt="Foto" id="Foto-saya">
             </section>
             <section id="skills">
-                <h1 class="judul-section"><span>Tech</span> Stack</h1>
+                <div id="skill-container">
+                    <p class="jepang" id="skill-jepang">技術</p>
+                    <h1 class="judul-section"><span>Tech</span> Stack</h1>
+                </div>
                 <div class="logo-container">
+                    <img src="{{ asset('assets/gambar/FateTypeRedline.png') }}" alt="redline" id="redline">
                     <ul class="logo-list">
-                        <li><img src="{{ asset('assets/gambar/laravel.png') }}" alt="Laravel" class="logo"></li>
+                        <li><img src="{{ asset('assets/gambar/css.png') }}" alt="CSS" class="logo"></li>
                         <li><img src="{{ asset('assets/gambar/php.png') }}" alt="PHP" class="logo"></li>
                         <li><img src="{{ asset('assets/gambar/mysql.png') }}" alt="MySQL" class="logo"></li>
                         <li><img src="{{ asset('assets/gambar/javascript.png') }}" alt="JavaScript" class="logo"></li>

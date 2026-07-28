@@ -21,12 +21,17 @@ html.snap-active {
 nav {
     display: flex;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
     z-index: 10;
     color: white;
     justify-content: center;
     background-color: rgba(27, 27, 27, 0.8);
     padding: 10px 50px;
-    gap: 31vw;
+    gap: 25vw;
 }
 
 .logo-nav {
@@ -264,19 +269,44 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-    background-color: red;
+    position : relative;
+    padding: 15px;
+}
+
+#skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position : relative;
+}
+
+#skill-jepang{
+    position: absolute;
+    margin-right: 250px;
+}
+
+#redline{
+    height: 100%;
+    width: auto;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    inset : 0;
 }
 
 .logo-list {
     display: flex;
-    gap: 40px;
+    gap: 15px;
     flex-direction: row;
+    z-index: 2;
 }
 
 .logo {
-    padding: 20px;
-    background-color: rgba(55, 55, 55, 0.5);
+    background-color: #141414;
+    height: 90px;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 #projects h1 {
