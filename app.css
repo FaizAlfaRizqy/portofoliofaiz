@@ -54,7 +54,6 @@ nav {
 .nav-link {
     color: white;
     text-decoration: none;
-    font-weight: 600;
     transition: color 0.3s ease-in-out;
 }
 
@@ -201,6 +200,17 @@ p {
     max-width: 520px;
 }
 
+.jepang-miring {
+    font-style: italic;
+    color: red;
+    font-size: 2rem;
+    margin-top: 20px;
+    position: relative;
+    writing-mode: vertical-rl;
+    transform: rotate(-30deg);
+    margin-left: 400px;
+}
+
 #deskripsi-about {
     margin-top: -20px;
     color: white;
@@ -226,7 +236,8 @@ p {
     font-size: 3.5em;
     font-weight: 800;
     color: white;
-    margin-top: -20px;
+    margin-top: -30px;
+    margin-bottom: 10px;
 }
 
 .judul-section span {
@@ -301,6 +312,7 @@ p {
 #skill-jepang{
     position: absolute;
     margin-right: 250px;
+    margin-top: 10px;
 }
 
 #redline{
@@ -358,6 +370,7 @@ p {
     background-color: rgba(55, 55, 55, 0.5);
     inset: 0;
     z-index: 1;
+    border: 1px solid red;
 }
 
 .project-image {
@@ -367,6 +380,17 @@ p {
     background-color: rgba(55, 55, 55, 0.5);
     inset: 0;
     z-index: 1;
+    border: 1px solid red;
+}
+
+.project-info-main {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 230px;
+    z-index: 2;
+    margin-left: 20px;
 }
 
 .project-info {
@@ -374,6 +398,22 @@ p {
     position: absolute;
     flex-direction: column;
     z-index: 2;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+.project-title {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 0 0 6px;
+}
+
+.project-description {
+    color: white;
+    font-size: 1em;
+    max-width: 300px;
+    margin: 0;
 }
 
 .project-secondary {
