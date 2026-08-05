@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Portofolio</title>
+
+        @fonts
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="app.css">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <p1 class="logo-nav">Faiz<snap>Alfa</snap>Rizqy</p1>
+                <ul id="navbar">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="www.github.com/faizalfarizqy" class="button">Download CV</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- UI tambahan --->
+        <div id="hiasan">
+            <img src ="assets/gambar/Sneasel.gif" alt="Sneasel" id="sneasel">
+            <div id="timer">
+                <div class="timer-label">Session:</div>
+                <div id="timer-value">00:00</div>
+            </div>
+        </div>
+        <main>
+            <section id="hero">
+                <video autoplay muted loop>
+                    <source src="assets/video/hero.mp4" type="video/mp4">
+                </video>
+                <div class="hero-content">
+                    <p class="jepang">こんにちわ!</p>
+                    <h1 class="nama">Faiz Alfa Rizqy</h1>
+                    <h2 class="role">Fullstack Developer</h2>
+                    <p class="deskripsi">I love building software that solves real problems from modern web 
+                        applications to embedded systems. Every project is a chance to experiment, learn 
+                        something new, and better understand the technology behind it.</p>
+                    <div class="btn-container">
+                        <a href="#projects" class="btn">My Projects</a>
+                        <a href="https://github.com/FaizAlfaRizqy" class="btn">Github</a>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <p class="jepang-background">私について</p>
+                <div class="isi-about">
+                    <p class="jepang">私について</p>
+                    <h1 class="judul-section">About <span>Me</span></h1>
+                    <p id="deskripsi-about">I'm an Informatics student and backend developer who enjoys building reliable systems 
+                        and exploring how things work behind the scenes. My interests span from web development 
+                        with Laravel to embedded systems using Raspberry Pi and ArduPilot. I believe the best way 
+                        to learn is by building, experimenting, and understanding the technology I use.</p>
+                <img src="assets/gambar/ttd.png" alt="tandatangan" id="ttd">
+                </div>
+                <img src="assets/gambar/Group 53.png" alt="Foto" id="Foto-saya">
+            </section>
+            <section id="skills">
+                <div id="skill-container">
+                    <p class="jepang" id="skill-jepang">技術</p>
+                    <h1 class="judul-section"><span>Tech</span> Stack</h1>
+                </div>
+                <div class="logo-container">
+                    <img src="assets/gambar/FateTypeRedline.png" alt="redline" id="redline">
+                    <ul class="logo-list">
+                        <li><img src="assets/gambar/css.png" alt="CSS" class="logo"></li>
+                        <li><img src="assets/gambar/php.png" alt="PHP" class="logo"></li>
+                        <li><img src="assets/gambar/mysql.png" alt="MySQL" class="logo"></li>
+                        <li><img src="assets/gambar/javascript.png" alt="JavaScript" class="logo"></li>
+                        <li><img src="assets/gambar/html.png" alt="HTML" class="logo"></li>
+                        <li><img src="asset('assets/gambar/css.png" alt="CSS" class="logo"></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="projects">
+                <h1 class="judul-section"><span>My</span>Projects</h1>
+                <div class="project-container">
+                    <div src="assets/gambar/Project1.png" alt="Project 1" class="project-image-primary">
+                        <div class="project-info">
+                            <h2 class="project-title">Project 1</h2>
+                            <p class="project-description">Description of Project 1.</p>
+                        </div>
+                    </div>
+                    <div class="project-secondary">
+                        <div src="assets/gambar/Project2.png" alt="Project 2" class="project-image">
+                            <div class="project-info">
+                                <h2 class="project-title">Project 2</h2>
+                                <p class="project-description">Description of Project 2.</p>
+                            </div>
+                        </div>
+                        <div src="assets/gambar/Project3.png" alt="Project 3" class="project-image">
+                            <div class="project-info">
+                                <h2 class="project-title">Project 3</h2>
+                                <p class="project-description">Description of Project 3.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <p>Contact</p>
+            </section>
+
+            <script src="app.js" defer></script>
+
+        </main>
+</html>
