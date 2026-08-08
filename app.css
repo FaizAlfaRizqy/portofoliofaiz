@@ -487,3 +487,101 @@ p {
     object-fit: cover;
     z-index: 1;
 }
+
+/* Contact section styles */
+.contact-content {
+    margin-left: 15vw;
+    margin-top: 40px;
+}
+
+.contact-area {
+    position: relative;
+    display: block;
+    margin-left: 15vw;
+    margin-right: 12vw;
+    padding: 40px 0 80px 0;
+}
+
+.contact-decor {
+    position: absolute;
+    top: 10px;
+    left: -1%;
+    font-size: 200px;
+    font-weight: 800;
+    color: white;
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.contact-form-container {
+    position: relative;
+    background-color: rgba(28,28,28,0.95);
+    border-radius: 12px;
+    padding: 32px;
+    max-width: 900px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.contact-form-container label {
+    display: block;
+    color: white;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    background-color: #2b2b2b;
+    border: 1px solid #FB3636;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+}
+
+.contact-form-container textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.contact-submit {
+    display: inline-block;
+    margin: 16px auto 0 auto;
+    background-color: #FB3636;
+    color: white;
+    padding: 12px 36px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+/* Responsive: prevent overlap on small screens */
+@media (max-width: 900px) {
+    .contact-content, .contact-area {
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+
+    .contact-form-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-container textarea { min-height: 140px; }
+}
+
+/* Mobile blocker: show a plain black fullscreen overlay when enabled by JS */
+#mobile-blocker {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 99999;
+}

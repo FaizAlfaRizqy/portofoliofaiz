@@ -2,6 +2,22 @@ let elapsedSeconds = 0;
 let minutes = 0;
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Show a blank black overlay on Android/iPhone devices only
+    (function showMobileBlockerIfNeeded() {
+        try {
+            const ua = navigator.userAgent || navigator.vendor || window.opera || '';
+            const isMobileIOSorAndroid = /Android|iPhone|iPad|iPod/i.test(ua);
+            if (isMobileIOSorAndroid) {
+                const blocker = document.getElementById('mobile-blocker');
+                if (blocker) {
+                    blocker.style.display = 'block';
+                }
+            }
+        } catch (err) {
+            // fail silently
+            console.error(err);
+        }
+    })();
     const timerValue = document.getElementById('timer-value');
 
     if (timerValue) {
@@ -114,6 +130,21 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 }, 10);
             });
+        });
+    }
+
+    // Contact form: prevent actual navigation/submit (frontend-only)
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            // simple visual feedback (no backend): briefly flash button
+            const btn = contactForm.querySelector('.contact-submit');
+            if (btn) {
+                btn.style.transform = 'scale(0.98)';
+                setTimeout(() => { btn.style.transform = ''; }, 120);
+            }
+            console.log('Contact form submitted (frontend-only)');
         });
     }
 });

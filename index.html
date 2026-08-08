@@ -15,6 +15,7 @@
 
     </head>
     <body>
+        <div id="mobile-blocker" aria-hidden="true"></div>
         <header>
             <nav>
                 <p1 class="logo-nav">Faiz<snap>Alfa</snap>Rizqy</p1>
@@ -120,7 +121,27 @@
                 <h2 class="Quotes">“Every project begins as an <span>impossible idea</span>. Let's see how far <span>we can take it</span>.”</h2>
             </div>
             <section id="contact">
-                <p>Contact</p>
+                <div class="contact-content">
+                    <p class="jepang">接触</p>
+                    <h1 class="judul-section">Contact <span>Me</span></h1>
+                </div>
+
+                <div class="contact-area">
+                    <div class="contact-form-container">
+                        <form id="contact-form" novalidate>
+                            <label for="contact-name">Nama :</label>
+                            <input type="text" id="contact-name" name="name" autocomplete="name">
+
+                            <label for="contact-email">Email :</label>
+                            <input type="email" id="contact-email" name="email" autocomplete="email">
+
+                            <label for="contact-message">Message :</label>
+                            <textarea id="contact-message" name="message" rows="8"></textarea>
+
+                            <button type="submit" class="button-nav contact-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </section>
 
             <script src="public/app.js" defer></script>
