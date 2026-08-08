@@ -71,4 +71,49 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     window.addEventListener('scroll', updateSnapBehavior, { passive: true });
+
+    // Projects hover interaction: change vertical Japanese accent text
+    const projectsData = [
+        { name: "HoloNight", japanese: "ホロウナイト" },
+        { name: "Roomify", japanese: "ルームファイ" },
+        { name: "SiLomba", japanese: "シロンバ" }
+    ];
+
+    const projectCards = document.querySelectorAll('[data-project]');
+    const hoverTitle = document.getElementById('project-hover-title') || document.getElementById('vertikal-line');
+    const defaultTitle = 'プロジェクト';
+
+    if (hoverTitle) {
+        hoverTitle.textContent = defaultTitle;
+    }
+
+    if (projectCards && projectCards.length) {
+        projectCards.forEach((card) => {
+            card.addEventListener('mouseenter', (e) => {
+                const idx = parseInt(card.dataset.project, 10);
+                if (isFinite(idx) && projectsData[idx] && hoverTitle) {
+                    // fade out, swap text, fade in
+                    hoverTitle.style.opacity = '0';
+                    setTimeout(() => {
+                        hoverTitle.textContent = projectsData[idx].japanese;
+                        hoverTitle.style.opacity = '1';
+                    }, 120);
+                }
+            });
+
+            card.addEventListener('mouseleave', () => {
+                // if no other project card is hovered, restore default
+                setTimeout(() => {
+                    const anyHovered = document.querySelector('[data-project]:hover');
+                    if (!anyHovered && hoverTitle) {
+                        hoverTitle.style.opacity = '0';
+                        setTimeout(() => {
+                            hoverTitle.textContent = defaultTitle;
+                            hoverTitle.style.opacity = '1';
+                        }, 120);
+                    }
+                }, 10);
+            });
+        });
+    }
 });

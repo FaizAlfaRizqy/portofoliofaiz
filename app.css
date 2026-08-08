@@ -365,7 +365,6 @@ p {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 40px;
 }
 
@@ -446,11 +445,12 @@ p {
 
 #vertikal-line {
     position: relative;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
     color: red;
     font-size: 1.5em;
     font-weight: 800;
-    margin-top: 100px;
+    margin-bottom: 250px;
     margin-left: 20px;
+    transition: opacity 0.25s ease-in-out;
 }
