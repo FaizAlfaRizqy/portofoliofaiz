@@ -18,6 +18,14 @@ html.snap-active {
     scroll-snap-type: y mandatory;
 }
 
+.btn{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 nav {
     display: flex;
     position: fixed;
@@ -32,6 +40,21 @@ nav {
     background-color: rgba(27, 27, 27, 0.8);
     padding: 10px 50px;
     gap: 25vw;
+}
+
+.button-nav {
+    padding: 6px 20px;
+    background-color: #FB3636;
+    color: white;
+    border-radius: 10px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 .logo-nav {
@@ -58,13 +81,6 @@ nav {
     text-decoration-thickness: 2px;
 }
 
-#navbar .button {
-    padding: 6px 20px;
-    background-color: #FB3636;
-    color: white;
-    border-radius: 10px;
-    font-weight: 800;
-}
 
 #hero {
     position: relative;
@@ -101,8 +117,8 @@ p {
     color: white;
     font-size: 60px;
     font-weight: 800;
-    margin-top: -10px;
-    margin-bottom: -10px;
+    margin-top: -30px;
+    margin-bottom: -30px;
 }
 
 .jepang {
@@ -120,6 +136,7 @@ p {
     color: red;
     font-size: 40px;
     font-weight: 800;
+    margin-bottom: 0px;
 }
 
 .btn-container {
@@ -183,6 +200,17 @@ p {
     max-width: 520px;
 }
 
+.jepang-miring {
+    font-style: italic;
+    color: red;
+    font-size: 2rem;
+    margin-top: 20px;
+    position: relative;
+    writing-mode: vertical-rl;
+    transform: rotate(-30deg);
+    margin-left: 400px;
+}
+
 #deskripsi-about {
     margin-top: -20px;
     color: white;
@@ -208,7 +236,8 @@ p {
     font-size: 3.5em;
     font-weight: 800;
     color: white;
-    margin-top: -20px;
+    margin-top: -30px;
+    margin-bottom: 10px;
 }
 
 .judul-section span {
@@ -283,6 +312,7 @@ p {
 #skill-jepang{
     position: absolute;
     margin-right: 250px;
+    margin-top: 10px;
 }
 
 #redline{
@@ -310,10 +340,15 @@ p {
 }
 
 #projects h1 {
-    margin-top: 100px;
+    margin-top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#project-jepang {
+    display: block;
+    margin: 0 0 -12px;
 }
 
 .project-container {
@@ -340,6 +375,7 @@ p {
     background-color: rgba(55, 55, 55, 0.5);
     inset: 0;
     z-index: 1;
+    border: 1px solid red;
 }
 
 .project-image {
@@ -349,6 +385,17 @@ p {
     background-color: rgba(55, 55, 55, 0.5);
     inset: 0;
     z-index: 1;
+    border: 1px solid red;
+}
+
+.project-info-main {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 230px;
+    z-index: 2;
+    margin-left: 20px;
 }
 
 .project-info {
@@ -356,6 +403,22 @@ p {
     position: absolute;
     flex-direction: column;
     z-index: 2;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+.project-title {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 0 0 6px;
+}
+
+.project-description {
+    color: white;
+    font-size: 1em;
+    max-width: 300px;
+    margin: 0;
 }
 
 .project-secondary {
