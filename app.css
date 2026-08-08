@@ -454,3 +454,36 @@ p {
     margin-left: 20px;
     transition: opacity 0.25s ease-in-out;
 }
+
+.quotes-container {
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.Quotes {
+    color: white;
+    font-size: 2em;
+    font-weight: 800;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.Quotes span {
+    color: red;
+}
+
+#rinpendant{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
